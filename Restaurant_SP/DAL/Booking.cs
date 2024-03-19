@@ -16,5 +16,6 @@ namespace Restaurant_SP.DAL
         public string Purpose { get; set; }
         public string Status { get; set; }
 
+        public virtual Room Room { get; set; }
     }
 }

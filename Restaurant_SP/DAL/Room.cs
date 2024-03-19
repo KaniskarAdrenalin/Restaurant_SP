@@ -12,6 +12,9 @@ namespace Restaurant_SP.DAL
         public Nullable<int> Capacity { get; set; }
         public Nullable<int> RemainingSpace { get; set; }
         public string Description { get; set; }
+
+        public virtual Booking Booking { get; set; }
+        public virtual User User { get; set; }
     }
 
 }

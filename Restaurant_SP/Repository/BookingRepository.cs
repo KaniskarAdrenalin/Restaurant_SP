@@ -29,11 +29,11 @@ namespace Restaurant_SP.Repository
             com.Parameters.AddWithValue("@BookingID", obj.BookingID);
             com.Parameters.AddWithValue("@UserID", obj.UserID);
             com.Parameters.AddWithValue("@RoomID", obj.RoomID);
-            com.Parameters.AddWithValue("@BookingDate", obj.BookingDate);
-            com.Parameters.AddWithValue("@StartTime", obj.StartTime);
-            com.Parameters.AddWithValue("@EndTime", obj.EndTime);
-            com.Parameters.AddWithValue("@Purpose", obj.Purpose);
-            com.Parameters.AddWithValue("@Status", obj.Status);
+            com.Parameters.AddWithValue("@BookingDate",obj.BookingDate);
+            com.Parameters.AddWithValue("@StartTime",obj.StartTime);
+            com.Parameters.AddWithValue("@EndTime",  obj.EndTime);
+            com.Parameters.AddWithValue("@Purpose",obj.Purpose);
+            com.Parameters.AddWithValue("@Status",obj.Status);
 
             con.Open();
             int i = com.ExecuteNonQuery();
